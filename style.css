@@ -23,7 +23,6 @@
   --accent-hover: #f1ca88;
   --accent-faint: rgba(229, 189, 122, 0.1);
   --green: #91b19a;
-  --green-faint: rgba(145, 177, 154, 0.15);
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.55);
   --radius-sm: 8px;
@@ -560,7 +559,7 @@ code {
   border-color: var(--accent);
 }
 
-.gallery-tab.active {
+.gallery-tab[aria-selected="true"] {
   background: var(--accent);
   color: #1b1c16;
   border-color: var(--accent);
@@ -571,12 +570,8 @@ code {
   margin-inline: auto;
 }
 
-.gallery-panel {
+.gallery-panel[hidden] {
   display: none;
-}
-
-.gallery-panel.active {
-  display: block;
 }
 
 .gallery-card {
@@ -608,10 +603,6 @@ code {
 }
 
 /* Étapes de démarrage */
-.steps-grid {
-  counter-reset: steps-counter;
-}
-
 .step-card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
