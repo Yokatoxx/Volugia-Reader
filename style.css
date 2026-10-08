@@ -150,24 +150,7 @@ code {
   border-color: var(--accent);
 }
 
-.full-width {
-  width: 100%;
-}
-
-/* Pastilles & statuts */
-.pill-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.85rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-muted);
-}
-
+/* Statut en ligne */
 .status-dot {
   width: 7px;
   height: 7px;
@@ -993,16 +976,8 @@ code {
     gap: 4rem;
   }
 
-  .section-features .feature-row.reverse {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .section-features .feature-row.reverse .feature-text {
     order: 2;
-  }
-
-  .section-features .feature-row.reverse .feature-media {
-    order: 1;
   }
 
   .footer-container {
