@@ -7,7 +7,6 @@ Site vitrine présentant l'application Volugia : bibliothèque personnelle et le
 - `style.css` : feuille de styles responsive (palette sombre officielle Volugia, variables CSS, typographie fluide).
 - `main.js` : interactions légères (menu mobile, onglets accessibles de la galerie).
 - `assets/` : captures d'écran réelles (Windows et Android), icône et police `Dancing Script`.
-- `downloads/` : exécutable et APK pour l'installation directe.
 - `CNAME` : domaine `volugia.me`.
 
 ## Aperçu local

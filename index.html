@@ -28,7 +28,7 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#telecharger" class="btn btn-primary btn-sm">Télécharger</a>
+        <a href="#disponibilite" class="btn btn-secondary btn-sm">Bientôt disponible</a>
         <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
@@ -40,11 +40,6 @@
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <div class="pill-badge">
-            <span class="status-dot"></span>
-            <span>100% Local-First · Windows & Android</span>
-          </div>
-
           <h1 class="hero-title">Lisez vos mangas, BD et livres partout. En toute liberté.</h1>
 
           <p class="hero-desc">
@@ -54,9 +49,9 @@
           </p>
 
           <div class="hero-cta">
-            <a href="#telecharger" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-6-6 6 6 6-6M4 20h16"/></svg>
-              <span>Télécharger Volugia</span>
+            <a href="#disponibilite" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Bientôt disponible</span>
             </a>
             <a href="#fonctionnalites" class="btn btn-secondary">
               <span>Découvrir les fonctionnalités</span>
@@ -208,22 +203,22 @@
 
         <div class="feature-row">
           <div class="feature-text">
-            <span class="feature-badge">LIAISON & SYNCHRONISATION</span>
-            <h3>Appairage en 5 secondes et synchronisation transparente</h3>
+            <span class="feature-badge">SYNCHRONISATION & COMPTE</span>
+            <h3>Connexion Google et synchronisation multi-appareils</h3>
             <p>
-              Oubliez les configurations réseau complexes, les ouvertures de ports ou les adresses IP à retenir.
-              Volugia gère tout de manière sécurisée et invisible.
+              Associez facilement vos appareils et retrouvez vos progressions de lecture où que vous soyez.
+              Volugia prend en charge la connexion simplifiée avec votre compte Google ou un service local.
             </p>
             <ul class="feature-checklist">
-              <li><strong>Découverte automatique (mDNS) :</strong> Le téléphone détecte automatiquement le PC sur votre réseau Wi-Fi local.</li>
-              <li><strong>Code temporaire à 12 caractères :</strong> Un code d'association unique permet d'authentifier le certificat TLS local.</li>
-              <li><strong>Chiffrement robuste :</strong> Sessions protégées avec Windows DPAPI sur PC et Android Keystore sur mobile.</li>
-              <li><strong>Zéro requête au repos :</strong> Aucune boucle de synchronisation permanente en arrière-plan pour préserver l'autonomie.</li>
+              <li><strong>Connexion Google en 1 clic :</strong> Connectez-vous sur Windows et Android pour synchroniser automatiquement vos lectures.</li>
+              <li><strong>Découverte sur réseau local :</strong> Le téléphone détecte automatiquement le PC sur votre réseau Wi-Fi local.</li>
+              <li><strong>Sécurité & Chiffrement moderne :</strong> Sessions protégées avec Windows DPAPI sur PC et Android Keystore sur mobile.</li>
+              <li><strong>Zéro requête au repos :</strong> Aucune synchronisation énergivore en arrière-plan afin de préserver votre batterie.</li>
               <li><strong>Import de progressions :</strong> Récupérez votre historique de lecture depuis YACReader, Calibre, Komga ou Kavita en un clic.</li>
             </ul>
           </div>
-          <div class="feature-media">
-            <img src="assets/volugia-pc-pair.png" alt="Fenêtre d'appairage sécurisé entre Windows et Android par code Wi-Fi" loading="lazy">
+          <div class="feature-media phone-media">
+            <img src="assets/volugia-account-google.png" alt="Écran de connexion avec compte Google sur Volugia" loading="lazy">
           </div>
         </div>
       </div>
@@ -252,8 +247,8 @@
           <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-selection" id="tab-btn-mobile-selection">
             Sélection & Gestion
           </button>
-          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-pairing" id="tab-btn-pairing">
-            Appairage Sécurisé
+          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-account" id="tab-btn-account">
+            Compte Google
           </button>
         </div>
 
@@ -298,12 +293,12 @@
             </div>
           </div>
 
-          <div class="gallery-panel" id="tab-pairing" role="tabpanel" aria-labelledby="tab-btn-pairing" hidden>
-            <div class="gallery-card">
-              <img src="assets/volugia-pc-pair.png" alt="Association sécurisée du PC et du smartphone" loading="lazy">
+          <div class="gallery-panel" id="tab-account" role="tabpanel" aria-labelledby="tab-btn-account" hidden>
+            <div class="gallery-card phone-gallery-card">
+              <img src="assets/volugia-account-google.png" alt="Connexion avec compte Google sur Volugia" loading="lazy">
               <div class="gallery-caption">
-                <h4>Appairage Wi-Fi cryptographique</h4>
-                <p>Code de 12 caractères généré sur le PC pour sceller la liaison TLS avec le smartphone sans manipulation complexe.</p>
+                <h4>Compte Google & Synchronisation</h4>
+                <p>Connexion rapide avec votre compte Google pour associer vos appareils et synchroniser votre progression de lecture.</p>
               </div>
             </div>
           </div>
@@ -333,10 +328,9 @@
 
           <div class="step-card">
             <span class="step-number">02</span>
-            <h3>Reliez votre téléphone</h3>
+            <h3>Connectez vos appareils</h3>
             <p>
-              Sur le PC, cliquez sur <strong>Mon espace → Mes appareils → Relier un téléphone</strong>.
-              Sur Android, ouvrez l'application, sélectionnez le PC détecté et entrez le code de 12 caractères.
+              Associez votre PC et votre smartphone en toute simplicité : connectez votre compte Google ou reliez directement vos appareils sur votre réseau local.
             </p>
           </div>
 
@@ -503,51 +497,51 @@
       </div>
     </section>
 
-    <section id="telecharger" class="section section-download">
+    <section id="disponibilite" class="section section-download">
       <div class="container">
         <div class="section-header text-center">
-          <span class="eyebrow">INSTALLATION & TÉLÉCHARGEMENT</span>
-          <h2 class="section-title">Prêt à retrouver vos lectures ?</h2>
+          <span class="eyebrow">DISPONIBILITÉ & SORTIE</span>
+          <h2 class="section-title">Téléchargements bientôt disponibles</h2>
           <p class="section-subtitle">
-            Téléchargez Volugia gratuitement pour votre ordinateur et votre smartphone.
+            Volugia est en phase finale d'optimisation. Les versions pour Windows et Android seront mises à disposition très prochainement ici même.
           </p>
         </div>
 
         <div class="grid grid-2 download-grid">
           <div class="download-card">
-            <div class="download-badge">WINDOWS</div>
+            <div class="download-badge">WINDOWS · ARRIVE BIENTÔT</div>
             <div class="download-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg>
             </div>
             <h3>Volugia pour Windows</h3>
-            <p>Application autonome portable pour Windows 10 & 11 (64-bit). Aucune installation de Python requise.</p>
+            <p>Application autonome et portable pour Windows 10 & 11 (64-bit). Aucun runtime Python requis, le moteur est directement intégré.</p>
             <div class="download-meta">
-              <span>Version : 0.10.0</span>
-              <span>Portable · Moteur intégré</span>
+              <span>Plateforme : Windows 10 / 11</span>
+              <span>Format : Exécutable portable (.exe)</span>
             </div>
-            <a href="https://github.com/Yokatoxx/Volugia-Site" class="btn btn-primary full-width" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-6-6 6 6 6-6M4 20h16"/></svg>
-              <span>Obtenir Volugia Windows (exe)</span>
-            </a>
-            <small class="download-subtext">Conservez simplement l'exécutable et son dossier <code>data</code> ensemble.</small>
+            <div class="status-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Téléchargement bientôt disponible</span>
+            </div>
+            <small class="download-subtext">L'exécutable portable sera téléchargeable directement sans installation complexe.</small>
           </div>
 
           <div class="download-card featured">
-            <div class="download-badge">ANDROID</div>
+            <div class="download-badge">ANDROID · ARRIVE BIENTÔT</div>
             <div class="download-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
             </div>
             <h3>Volugia pour Android</h3>
-            <p>Application native Java ultra-rapide. Compatible Android 8.0 et versions supérieures.</p>
+            <p>Lecteur Java 100% natif ultra-rapide et économe en batterie. Compatible avec Android 8.0 et toutes les versions ultérieures.</p>
             <div class="download-meta">
-              <span>Version : 0.10.0</span>
-              <span>Taille : ~150 Ko · Léger & autonome</span>
+              <span>Plateforme : Android 8.0+</span>
+              <span>Format : Paquet APK (~150 Ko)</span>
             </div>
-            <a href="downloads/Volugia-Android.apk" class="btn btn-primary full-width" download>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m-6-6 6 6 6-6M4 20h16"/></svg>
-              <span>Télécharger Volugia-Android.apk</span>
-            </a>
-            <small class="download-subtext">Installation directe APK. Mises à jour conservant vos lectures.</small>
+            <div class="status-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>APK bientôt en ligne</span>
+            </div>
+            <small class="download-subtext">Installation directe du fichier APK avec conservation de vos lectures lors des mises à jour.</small>
           </div>
         </div>
 
@@ -588,7 +582,7 @@
           <a href="#formats">Formats supportés</a>
           <a href="#formats">Sécurité & TLS</a>
           <a href="#faq">Foire aux questions</a>
-          <a href="#telecharger">Téléchargement</a>
+          <a href="#disponibilite">Disponibilité</a>
         </div>
         <div class="footer-col">
           <strong>Engagement</strong>

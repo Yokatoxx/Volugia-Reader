@@ -838,6 +838,27 @@ code {
   padding-top: 0.8rem;
 }
 
+.status-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--bg-panel);
+  border: 1px dashed var(--accent);
+  color: var(--accent);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-box svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+}
+
 .download-subtext {
   font-size: 0.78rem;
   color: var(--text-faint);
