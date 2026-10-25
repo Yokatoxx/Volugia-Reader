@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#131514">
-  <meta name="description" content="Volugia est une bibliothèque personnelle et un lecteur de mangas, BD et livres numériques pour Windows et Android. Fonctionne en réseau local, 100% privé, sans cloud obligatoire.">
+  <meta name="description" content="Volugia est une bibliothèque personnelle et un lecteur de mangas, BD, webtoons et livres numériques pour Windows et Android. Fonctionne en réseau local, 100% privé, sans cloud obligatoire.">
   <title>Volugia - Bibliothèque personnelle de mangas, BD et livres pour Windows & Android</title>
   <link rel="icon" type="image/x-icon" href="assets/volugia.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=03b64f12a9">
   <script src="main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
   <header class="site-header">
     <div class="header-inner container">
       <a href="#" class="brand" aria-label="Volugia, accueil">
@@ -19,207 +20,121 @@
       </a>
 
       <nav class="nav-links" id="primary-nav" aria-label="Navigation principale">
-        <a href="#presentation">Présentation</a>
-        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#presentation">L’expérience</a>
         <a href="#galerie">Aperçu</a>
-        <a href="#guide">Démarrage</a>
-        <a href="#formats">Formats & Sécurité</a>
+        <a href="#guide">Pour commencer</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <div class="header-actions">
         <a href="#disponibilite" class="btn btn-secondary btn-sm">Bientôt disponible</a>
-        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="content" tabindex="-1">
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <h1 class="hero-title">Lisez vos mangas, BD et livres partout. En toute liberté.</h1>
-
-          <p class="hero-desc">
-            Volugia réunit votre PC Windows et votre smartphone Android autour de votre collection personnelle.
-            Zéro serveur distant obligatoire, zéro abonnement et aucune publicité : vos fichiers restent chez vous,
-            et vos lectures se synchronisent instantanément sur votre réseau local.
-          </p>
-
+          <p class="eyebrow">Votre bibliothèque, en toute liberté</p>
+          <h1 class="hero-title"><span>Vos lectures.</span> <em>À votre rythme.</em></h1>
+          <p class="hero-desc">Mangas, BD, webtoons et livres. Une bibliothèque qui reste chez vous, du PC au téléphone.</p>
           <div class="hero-cta">
-            <a href="#disponibilite" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Bientôt disponible</span>
-            </a>
-            <a href="#fonctionnalites" class="btn btn-secondary">
-              <span>Découvrir les fonctionnalités</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-            </a>
+            <a href="#presentation" class="btn btn-primary">Découvrir Volugia <span aria-hidden="true">→</span></a>
+            <a href="#galerie" class="text-link">Voir l’interface <span aria-hidden="true">↗</span></a>
           </div>
-
-          <ul class="hero-highlights" aria-label="Points clés">
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
-              <span>Vos fichiers restent sur votre PC</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
-              <span>App Android 100% native & ultra fluide</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
-              <span>Lecture hors-ligne & téléchargement</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
-              <span>CBZ · CBR · PDF · EPUB</span>
-            </li>
-          </ul>
+          <p class="hero-availability">Windows &amp; Android <span aria-hidden="true">·</span> Bientôt disponible</p>
         </div>
-
-        <div class="hero-showcase">
-          <div class="mockup-frame desktop-mockup">
-            <div class="mockup-header">
-              <div class="window-dots">
-                <span></span><span></span><span></span>
+        <figure class="hero-showcase">
+          <div class="showcase-stage">
+            <div class="desktop-mockup">
+              <div class="mockup-header" aria-hidden="true">
+                <span class="window-dots"><span></span><span></span><span></span></span>
+                <span>Volugia · Bibliothèque Windows</span>
               </div>
-              <span class="mockup-title">Volugia - Bibliothèque Windows</span>
+              <img src="assets/volugia-pc.png" alt="La bibliothèque Volugia sur Windows, avec ses séries et la reprise de lecture" width="1280" height="820" fetchpriority="high">
             </div>
-            <div class="mockup-body">
-              <img src="assets/volugia-pc.png" alt="Interface de Volugia sur PC montrant la collection de mangas et la reprise de lecture" width="1280" height="820" fetchpriority="high">
-            </div>
-          </div>
-
-          <div class="mockup-frame mobile-mockup">
-            <div class="phone-speaker"></div>
-            <div class="phone-screen">
-              <img src="assets/volugia-phone-home.png" alt="Interface native de Volugia sur smartphone Android" width="360" height="780">
+            <div class="mobile-mockup">
+              <img src="assets/volugia-phone-home.png" alt="Les lectures en cours et la collection sur Android" width="1280" height="2480">
             </div>
           </div>
-        </div>
+          <figcaption>Votre collection. Toujours à portée de main.</figcaption>
+        </figure>
       </div>
+      <ul class="trust-strip container" role="list" aria-label="Les engagements de Volugia">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3Z M9 20v-7h6v7"/></svg><span>Vos fichiers restent chez vous</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m6 6 12 12"/></svg><span>Sans abonnement</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12a11 11 0 0 1 14 0M2 8a16 16 0 0 1 20 0M9 16a5 5 0 0 1 6 0M12 20h.01M3 3l18 18"/></svg><span>Lisez aussi hors ligne</span></li>
+      </ul>
     </section>
 
-    <section id="presentation" class="section section-pillars">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="eyebrow">PHILOSOPHIE & ENGAGEMENT</span>
-          <h2 class="section-title">Une bibliothèque conçue pour respecter vos fichiers</h2>
-          <p class="section-subtitle">
-            Contrairement aux plateformes dépendantes du cloud, Volugia place votre autonomie au centre.
-            Vous possédez vos livres, votre matériel et vos données.
-          </p>
+    <section id="presentation" class="section section-story">
+      <div class="container story-layout">
+        <div class="story-heading">
+          <p class="eyebrow">Le plaisir de lire, simplement</p>
+          <h2 class="section-title">Tous vos tomes.<br><em>Un seul endroit.</em></h2>
+          <p>Une collection à vous. Une lecture qui vous ressemble.</p>
+          <figure class="story-media">
+            <img src="assets/volugia-pc.png" alt="Les tomes de votre collection, organisés par séries dans Volugia" width="1280" height="820" loading="lazy">
+            <figcaption>Vos livres restent à leur place. Volugia s’occupe de les réunir.</figcaption>
+          </figure>
         </div>
-
-        <div class="grid grid-3">
-          <article class="pillar-card">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>100% Local & Privé</h3>
-            <p>
-              Aucun fichier n'est téléversé vers un serveur tiers. La base de données SQLite et les images restent
-              exclusivement sur votre ordinateur. L'application fonctionne sans connexion Internet.
-            </p>
-          </article>
-
-          <article class="pillar-card">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
-            </div>
-            <h3>Synergie Wi-Fi & P2P</h3>
-            <p>
-              Le PC héberge votre bibliothèque sur votre réseau local. Votre téléphone Android s'y associe d'un geste
-              pour lire en streaming local ou télécharger vos tomes pour vos déplacements.
-            </p>
-          </article>
-
-          <article class="pillar-card">
-            <div class="pillar-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            </div>
-            <h3>Performance Native</h3>
-            <p>
-              Une application Windows portable et réactive. Un lecteur Android développé en Java pur sans WebView
-              lourde : vitesse maximale, zoom fluide et zéro consommation batterie inutile.
-            </p>
-          </article>
-        </div>
+        <ol class="story-benefits" role="list">
+          <li><span class="benefit-number" aria-hidden="true">01</span><div><h3>Une collection bien rangée</h3><p>Ajoutez vos dossiers. Retrouvez vos mangas, BD et livres par séries, sans déplacer ni renommer vos fichiers.</p></div></li>
+          <li><span class="benefit-number" aria-hidden="true">02</span><div><h3>Reprenez là où vous en étiez</h3><p>Gardez votre progression et vos favoris sur PC et Android. Votre prochain chapitre vous attend.</p></div></li>
+          <li><span class="benefit-number" aria-hidden="true">03</span><div><h3>Emportez vos lectures</h3><p>Téléchargez vos tomes sur Android avant de partir. Lisez dans le train, en voyage ou simplement sans connexion.</p></div></li>
+        </ol>
       </div>
     </section>
 
     <section id="fonctionnalites" class="section section-features">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="eyebrow">FONCTIONNALITÉS COMPLÈTES</span>
-          <h2 class="section-title">Tout ce dont vous avez besoin pour lire confortablement</h2>
-          <p class="section-subtitle">
-            De la gestion intelligente de vos dossiers à la lecture page par page, chaque détail est pensé pour le confort.
-          </p>
+        <div class="section-header">
+          <p class="eyebrow">De votre bibliothèque à votre prochaine lecture</p>
+          <h2 class="section-title">Le confort, sur chaque écran.</h2>
         </div>
-
         <div class="feature-row">
           <div class="feature-text">
-            <span class="feature-badge">APPLICATION WINDOWS</span>
-            <h3>Votre collection classée sans effort, sans toucher à vos fichiers</h3>
-            <p>
-              Ajoutez simplement le dossier de votre disque contenant vos BDs et mangas. Volugia parcourt les sous-dossiers
-              et organise automatiquement votre collection par séries.
-            </p>
-            <ul class="feature-checklist">
-              <li><strong>Couverture automatique du tome 1 :</strong> Reconnaissance intelligente des tomes (<code>T01</code>, <code>Tome 1</code>, <code>V001</code>, <code>Vol 1</code>) pour afficher la meilleure couverture.</li>
-              <li><strong>Tolérant aux extensions :</strong> Même si une archive 7z ou RAR est renommée <code>.cbz</code>, Volugia identifie son format interne réel.</li>
-              <li><strong>Non destructif :</strong> Vos fichiers originaux ne sont jamais altérés, extraits sur le disque ou déplacés.</li>
-              <li><strong>Reprise rapide :</strong> La rangée « Continuer la lecture » affiche immédiatement votre position et la barre de progression.</li>
+            <span class="feature-badge">Sur Windows</span>
+            <h3>Votre collection.<br>Bien à sa place.</h3>
+            <p>Retrouvez vos séries, choisissez un tome et plongez dans votre lecture. Vos dossiers restent exactement comme vous les avez rangés.</p>
+            <ul class="feature-checklist" role="list">
+              <li>Classement par séries et couvertures automatiques.</li>
+              <li>Recherche, favoris et reprise de lecture.</li>
+              <li>CBZ, CBR, PDF, EPUB et archives 7z.</li>
             </ul>
           </div>
-          <div class="feature-media">
-            <img src="assets/volugia-pc.png" alt="Aperçu de la bibliothèque de mangas et BD sur PC" loading="lazy">
-          </div>
+          <div class="feature-media"><img src="assets/volugia-pc.png" alt="La collection et les lectures en cours sur Windows" width="1280" height="820" loading="lazy"></div>
         </div>
-
-        <div class="feature-row reverse">
+        <div class="feature-row feature-row-mobile">
+          <div class="feature-media phone-media"><img src="assets/volugia-phone-progress.png" alt="Le suivi des téléchargements de tomes sur Android" width="1280" height="2480" loading="lazy"></div>
           <div class="feature-text">
-            <span class="feature-badge">APPLICATION ANDROID NATIVE</span>
-            <h3>Un lecteur mobile pensé pour les passionnés de BD et mangas</h3>
-            <p>
-              Emportez vos lectures au creux de la main. L'application Android offre une interface Java native et un lecteur
-              taillé pour une fluidité absolue.
-            </p>
-            <ul class="feature-checklist">
-              <li><strong>Sens de lecture mémorisé :</strong> Lecture japonaise (droite à gauche) ou occidentale, retenue par livre.</li>
-              <li><strong>Modes de pages :</strong> Plein écran, page simple, double page manuelle ou détection automatique de double planche.</li>
-              <li><strong>Téléchargement hors-ligne :</strong> Conservez des tomes ou des séries entières sur votre téléphone pour lire en voyage ou sans connexion.</li>
-              <li><strong>Gestionnaire de transferts :</strong> Suivi précis page par page, file d'attente par tome, mise en pause et reprise sans perte de progression.</li>
-              <li><strong>Passage de tome instantané :</strong> Deux touches en fin de tome pour ouvrir immédiatement le suivant.</li>
+            <span class="feature-badge">Sur Android</span>
+            <h3>Un tome de plus.<br>Où que vous soyez.</h3>
+            <p>Un lecteur natif pour retrouver votre bibliothèque sur le téléphone et emporter vos séries préférées hors ligne.</p>
+            <ul class="feature-checklist" role="list">
+              <li>Page simple, double planche et plein écran.</li>
+              <li>Mode webtoon avec défilement vertical continu.</li>
+              <li>Sens de lecture mémorisé pour chaque livre.</li>
+              <li>Téléchargements avec suivi, pause et reprise.</li>
             </ul>
           </div>
-          <div class="feature-media phone-media">
-            <img src="assets/volugia-phone-progress.png" alt="Gestionnaire de téléchargements hors-ligne sur Volugia Android" loading="lazy">
-          </div>
         </div>
-
         <div class="feature-row">
           <div class="feature-text">
-            <span class="feature-badge">SYNCHRONISATION & COMPTE</span>
-            <h3>Connexion Google et synchronisation multi-appareils</h3>
-            <p>
-              Associez facilement vos appareils et retrouvez vos progressions de lecture où que vous soyez.
-              Volugia prend en charge la connexion simplifiée avec votre compte Google ou un service local.
-            </p>
-            <ul class="feature-checklist">
-              <li><strong>Connexion Google en 1 clic :</strong> Connectez-vous sur Windows et Android pour synchroniser automatiquement vos lectures.</li>
-              <li><strong>Découverte sur réseau local :</strong> Le téléphone détecte automatiquement le PC sur votre réseau Wi-Fi local.</li>
-              <li><strong>Sécurité & Chiffrement moderne :</strong> Sessions protégées avec Windows DPAPI sur PC et Android Keystore sur mobile.</li>
-              <li><strong>Zéro requête au repos :</strong> Aucune synchronisation énergivore en arrière-plan afin de préserver votre batterie.</li>
-              <li><strong>Import de progressions :</strong> Récupérez votre historique de lecture depuis YACReader, Calibre, Komga ou Kavita en un clic.</li>
+            <span class="feature-badge">À votre façon</span>
+            <h3>Vos appareils.<br>Le même fil de lecture.</h3>
+            <p>Reliez directement vos appareils sur le réseau local ou choisissez un compte partagé. Le compte reste facultatif.</p>
+            <ul class="feature-checklist" role="list">
+              <li>Association locale ou connexion Google.</li>
+              <li>Progressions et favoris synchronisés.</li>
+              <li>Import des lectures depuis YACReader, Calibre, Komga et Kavita.</li>
             </ul>
           </div>
-          <div class="feature-media phone-media">
-            <img src="assets/volugia-account-google.png" alt="Écran de connexion avec compte Google sur Volugia" loading="lazy">
-          </div>
+          <div class="feature-media phone-media"><img src="assets/volugia-account-google.png" alt="Le choix de connexion Google sur Volugia Android" width="1280" height="2480" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -227,77 +142,77 @@
     <section id="galerie" class="section section-gallery">
       <div class="container">
         <div class="section-header text-center">
-          <span class="eyebrow">GALERIE DE L'APPLICATION</span>
-          <h2 class="section-title">Découvrez l'interface sous tous ses angles</h2>
+          <span class="eyebrow">En images</span>
+          <h2 class="section-title">Votre prochaine lecture commence ici.</h2>
           <p class="section-subtitle">
-            Une interface sombre, épurée et soignée, pensée pour mettre vos couvertures et vos lectures en valeur.
+            Explorez les vrais écrans de Volugia, de la bibliothèque au lecteur.
           </p>
         </div>
 
         <div class="gallery-tabs-nav" role="tablist" aria-label="Écrans de l'application">
-          <button class="gallery-tab active" role="tab" aria-selected="true" data-target="tab-desktop" id="tab-btn-desktop">
+          <button class="gallery-tab active" role="tab" aria-selected="true" data-target="tab-desktop" id="tab-btn-desktop" type="button" aria-controls="tab-desktop" tabindex="0">
             Bibliothèque PC
           </button>
-          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-home" id="tab-btn-mobile-home">
+          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-home" id="tab-btn-mobile-home" type="button" aria-controls="tab-mobile-home" tabindex="-1">
             Accueil Mobile
           </button>
-          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-download" id="tab-btn-mobile-download">
+          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-download" id="tab-btn-mobile-download" type="button" aria-controls="tab-mobile-download" tabindex="-1">
             Suivi des Téléchargements
           </button>
-          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-reader" id="tab-btn-mobile-reader">
+          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-mobile-reader" id="tab-btn-mobile-reader" type="button" aria-controls="tab-mobile-reader" tabindex="-1">
             Double Page & Lecteur
           </button>
-          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-account" id="tab-btn-account">
+          <button class="gallery-tab" role="tab" aria-selected="false" data-target="tab-account" id="tab-btn-account" type="button" aria-controls="tab-account" tabindex="-1">
             Compte Google
           </button>
         </div>
 
         <div class="gallery-panels">
-          <div class="gallery-panel active" id="tab-desktop" role="tabpanel" aria-labelledby="tab-btn-desktop">
+          <div class="gallery-panel active" id="tab-desktop" role="tabpanel" tabindex="0" aria-labelledby="tab-btn-desktop">
             <div class="gallery-card">
-              <img src="assets/volugia-pc.png" alt="Bibliothèque Volugia sur PC Windows" loading="lazy">
+              <img src="assets/volugia-pc.png" alt="Bibliothèque Volugia sur PC Windows" loading="lazy" width="1280" height="820">
               <div class="gallery-caption">
-                <h4>Bibliothèque Windows</h4>
+                <h3>Bibliothèque Windows</h3>
                 <p>Reprise rapide avec "Continuer la lecture", vue en grille de séries, recherche instantanée et filtres par format.</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-panel" id="tab-mobile-home" role="tabpanel" aria-labelledby="tab-btn-mobile-home" hidden>
+          <div class="gallery-panel" id="tab-mobile-home" role="tabpanel" tabindex="0" aria-labelledby="tab-btn-mobile-home" hidden>
             <div class="gallery-card phone-gallery-card">
-              <img src="assets/volugia-phone-home.png" alt="Accueil Volugia sur Android" loading="lazy">
+              <img src="assets/volugia-phone-home.png" alt="Accueil Volugia sur Android" loading="lazy" width="1280" height="2480">
               <div class="gallery-caption">
-                <h4>Accueil Android</h4>
+                <h3>Accueil Android</h3>
                 <p>Accès direct aux lectures en cours, consultation des tomes synchronisés et navigation hors-ligne fluide.</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-panel" id="tab-mobile-download" role="tabpanel" aria-labelledby="tab-btn-mobile-download" hidden>
+          <div class="gallery-panel" id="tab-mobile-download" role="tabpanel" tabindex="0" aria-labelledby="tab-btn-mobile-download" hidden>
             <div class="gallery-card phone-gallery-card">
-              <img src="assets/volugia-phone-progress.png" alt="Gestionnaire de téléchargements sur Volugia Android" loading="lazy">
+              <img src="assets/volugia-phone-progress.png" alt="Gestionnaire de téléchargements sur Volugia Android" loading="lazy" width="1280" height="2480">
               <div class="gallery-caption">
-                <h4>Gestionnaire de Téléchargements</h4>
+                <h3>Gestionnaire de Téléchargements</h3>
                 <p>Suivi en direct des tomes en cours de transfert depuis le PC, gestion fine de la file d'attente, boutons de pause et annulation.</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-panel" id="tab-mobile-reader" role="tabpanel" aria-labelledby="tab-btn-mobile-reader" hidden>
+          <div class="gallery-panel" id="tab-mobile-reader" role="tabpanel" tabindex="0" aria-labelledby="tab-btn-mobile-reader" hidden>
             <div class="gallery-card phone-gallery-card">
-              <img src="assets/volugia-phone-reader.png" alt="Lecteur plein écran avec détection automatique de double page sur Volugia Android" loading="lazy">
+              <img src="assets/volugia-phone-reader.png" alt="Lecteur plein écran avec détection automatique de double page sur Volugia Android" loading="lazy" width="1280" height="2480">
               <div class="gallery-caption">
-                <h4>Double Planche Automatique & Lecteur Épuré</h4>
+                <h3>Double Planche Automatique & Lecteur Épuré</h3>
                 <p>Détection intelligente des doubles planches pour une immersion totale sans coupure, sens de lecture mémorisé et affichage plein écran.</p>
               </div>
             </div>
           </div>
 
-          <div class="gallery-panel" id="tab-account" role="tabpanel" aria-labelledby="tab-btn-account" hidden>
+          <div class="gallery-panel" id="tab-account" role="tabpanel" tabindex="0" aria-labelledby="tab-btn-account" hidden>
             <div class="gallery-card phone-gallery-card">
-              <img src="assets/volugia-account-google.png" alt="Connexion avec compte Google sur Volugia" loading="lazy">
+              <img src="assets/volugia-account-google.png" alt="Connexion avec compte Google sur Volugia" loading="lazy" width="1280" height="2480">
               <div class="gallery-caption">
-                <h4>Compte Google & Synchronisation</h4>
+                <h3>Compte Google & Synchronisation</h3>
                 <p>Connexion rapide avec votre compte Google pour associer vos appareils et synchroniser votre progression de lecture.</p>
               </div>
             </div>
@@ -310,9 +225,9 @@
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">PRISE EN MAIN</span>
-          <h2 class="section-title">Comment démarrer en 3 étapes simples</h2>
+          <h2 class="section-title">Trois étapes. Et le plaisir de lire.</h2>
           <p class="section-subtitle">
-            Moins de 2 minutes suffisent pour configurer votre bibliothèque et commencer à lire sur tous vos écrans.
+            Vos dossiers, vos appareils, vos lectures. Prenez simplement vos marques.
           </p>
         </div>
 
@@ -350,7 +265,7 @@
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">FORMATS & COMPATIBILITÉ</span>
-          <h2 class="section-title">Prise en charge universelle et sécurité moderne</h2>
+          <h2 class="section-title">Vos formats. Vos fichiers. Votre choix.</h2>
           <p class="section-subtitle">
             Conçu pour s'adapter à vos fichiers existants sans nécessiter de conversion fastidieuse.
           </p>
@@ -377,6 +292,9 @@
               </li>
               <li>
                 <strong>Archives 7z :</strong> Détectées et lues nativement même sous l'extension <code>.cbz</code>.
+              </li>
+              <li>
+                <strong>Webtoons :</strong> Lecture verticale continue, adaptée aux longues pages.
               </li>
             </ul>
           </div>
@@ -412,7 +330,7 @@
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">QUESTIONS FRÉQUENTES</span>
-          <h2 class="section-title">Tout ce que vous souhaitez savoir sur Volugia</h2>
+          <h2 class="section-title">Quelques questions, avant le premier tome.</h2>
           <p class="section-subtitle">
             Des réponses claires et transparentes sur le fonctionnement de l'application.
           </p>
@@ -490,9 +408,9 @@
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">DISPONIBILITÉ & SORTIE</span>
-          <h2 class="section-title">Téléchargements bientôt disponibles</h2>
+          <h2 class="section-title">Le prochain chapitre arrive bientôt.</h2>
           <p class="section-subtitle">
-            Volugia est en phase finale d'optimisation. Les versions pour Windows et Android seront mises à disposition très prochainement ici même.
+            Volugia se prépare pour Windows et Android. Vous retrouverez les téléchargements ici dès leur mise à disposition.
           </p>
         </div>
 
@@ -539,8 +457,8 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div class="banner-text">
-            <strong>Votre bibliothèque, à votre rythme.</strong>
-            <p>Sans abonnement payant, sans revente de données et sans verrouillage propriétaire.</p>
+            <strong>Vos livres, en toute liberté.</strong>
+            <p>Sans abonnement ni publicité. Vos fichiers restent chez vous.</p>
           </div>
         </div>
       </div>
@@ -554,7 +472,7 @@
           <span class="brand-name">Volugia</span>
           <span class="brand-dot">.</span>
         </a>
-        <p>Bibliothèque personnelle et lecteur pour mangas, BD et livres numériques sur Windows et Android.</p>
+        <p>Bibliothèque personnelle et lecteur pour mangas, BD, webtoons et livres numériques sur Windows et Android.</p>
         <span class="footer-domain">volugia.me</span>
       </div>
 
@@ -585,10 +503,6 @@
 
     <div class="container footer-bottom">
       <p>© Volugia - Votre bibliothèque personnelle locale. Tous droits réservés.</p>
-      <div class="footer-badges">
-        <span class="status-dot"></span>
-        <span>Fonctionne hors connexion</span>
-      </div>
     </div>
   </footer>
 </body>

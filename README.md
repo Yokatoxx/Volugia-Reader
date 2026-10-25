@@ -13,6 +13,7 @@ Volugia est une bibliothèque personnelle et un lecteur de mangas, bandes dessin
 - **Lecteur Android natif** : Application Android en Java pur, sans WebView lourde, optimisée pour l'autonomie et le rafraîchissement d'écran.
 - **Gestionnaire de téléchargements** : Suivi précis page par page, mise en pause et reprise sans perte de données.
 - **Double planche automatique** : Détection intelligente des doubles pages pour une lecture fluide et immersive.
+- **Webtoons** : Mode de lecture verticale continue, adapté aux longues pages.
 - **Large compatibilité de formats** : Prise en charge des formats CBZ (y compris 7z et RAR renommés), CBR, PDF et EPUB.
 - **Connexion simplifiée** : Option de compte Google ou service local pour synchroniser la progression entre appareils.
 
@@ -22,13 +23,18 @@ Volugia est une bibliothèque personnelle et un lecteur de mangas, bandes dessin
 
 Le site a été développé selon une approche minimaliste et ultra-performante (philosophie *Ponytail*) :
 
-- **Poids plume** : Moins de 50 Ko au total (HTML + CSS + JS hors médias).
+- **Poids plume** : Environ 50 Ko au total (HTML + CSS + JS hors médias).
 - **Zéro dépendance** : 100% Vanilla (aucun framework JS, aucune bibliothèque CSS externe, zéro tracker).
 - **Performance Core Web Vitals** : `fetchpriority="high"` sur l'image clé, `loading="lazy"` sur les médias différés, `font-display: swap` sur la police locale.
 - **Accessibilité & Standards** :
   - Onglets de galerie interactifs avec attributs ARIA (`[aria-selected]`, `roving tabindex` et navigation au clavier).
   - Foire aux questions (FAQ) gérée nativement via `<details name="faq">` sans JavaScript.
-  - Typographie fluide avec `clamp()` et mise en page responsive avec CSS Grid.
+  - Typographie fluide avec `clamp()`, titres équilibrés et mise en page responsive avec CSS Grid.
+  - Lien d’évitement, focus visible, menu mobile refermable avec Échap et galerie navigable avec les flèches, Début et Fin.
+
+## Direction visuelle
+
+La page conserve le noir profond, les accents dorés et le logo manuscrit de Volugia. L’accueil présente l’accroche « Vos lectures. À votre rythme. » et les captures réelles Windows et Android. Les bénéfices sont organisés en une présentation numérotée, avec des sections plus aérées et des textes plus courts. Les téléchargements restent annoncés comme à venir.
 
 ---
 
